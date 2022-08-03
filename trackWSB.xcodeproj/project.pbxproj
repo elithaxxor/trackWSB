@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		651D15FB289AF524003BBC13 /* ViewControllerLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D15FA289AF524003BBC13 /* ViewControllerLogger.swift */; };
+		651D15FD289AF586003BBC13 /* TableViewControllerLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D15FC289AF586003BBC13 /* TableViewControllerLogger.swift */; };
+		651D15FF289AF58C003BBC13 /* AppTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D15FE289AF58C003BBC13 /* AppTimer.swift */; };
+		651D1602289AF5B1003BBC13 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1601289AF5B1003BBC13 /* Extensions.swift */; };
+		651D1604289AF5C7003BBC13 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1603289AF5C7003BBC13 /* Constants.swift */; };
+		651D160A289AF5D6003BBC13 /* TwitterClassifer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 651D1605289AF5D6003BBC13 /* TwitterClassifer.mlmodel */; };
+		651D160B289AF5D6003BBC13 /* twitter-sanders-apple3.csv in Resources */ = {isa = PBXBuildFile; fileRef = 651D1606289AF5D6003BBC13 /* twitter-sanders-apple3.csv */; };
+		651D160C289AF5D6003BBC13 /* twitter-sanders-apple3.zip in Resources */ = {isa = PBXBuildFile; fileRef = 651D1607289AF5D6003BBC13 /* twitter-sanders-apple3.zip */; };
+		651D160D289AF5D6003BBC13 /* createTwitterMLmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1609289AF5D6003BBC13 /* createTwitterMLmodel.swift */; };
+		651D160F289AF5EE003BBC13 /* MBProgAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D160E289AF5EE003BBC13 /* MBProgAnimate.swift */; };
+		651D1611289AF695003BBC13 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1610289AF695003BBC13 /* HomeViewController.swift */; };
+		651D1613289AF6C7003BBC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651D1612289AF6C7003BBC13 /* Assets.xcassets */; };
+		651D1615289AF6D2003BBC13 /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = 651D1614289AF6D2003BBC13 /* Icons */; };
+		651D1618289AF73E003BBC13 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 651D1617289AF73E003BBC13 /* MBProgressHUD */; };
+		651D161A289AF7DC003BBC13 /* CalculatorViewTableControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1619289AF7DC003BBC13 /* CalculatorViewTableControllerViewController.swift */; };
+		651D1624289AF7F1003BBC13 /* TwitterPredictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D161B289AF7F0003BBC13 /* TwitterPredictViewController.swift */; };
+		651D1625289AF7F1003BBC13 /* DateSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D161C289AF7F0003BBC13 /* DateSelectionTableViewController.swift */; };
+		651D1626289AF7F1003BBC13 /* FinanceDocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D161D289AF7F0003BBC13 /* FinanceDocumentsViewController.swift */; };
+		651D1627289AF7F1003BBC13 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D161E289AF7F0003BBC13 /* PageViewController.swift */; };
+		651D1628289AF7F1003BBC13 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D161F289AF7F0003BBC13 /* WebViewController.swift */; };
+		651D1629289AF7F1003BBC13 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1620289AF7F0003BBC13 /* NewsTableViewController.swift */; };
+		651D162A289AF7F1003BBC13 /* BasicCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1621289AF7F1003BBC13 /* BasicCalculatorViewController.swift */; };
+		651D162B289AF7F1003BBC13 /* PredictStockVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1622289AF7F1003BBC13 /* PredictStockVC.swift */; };
+		651D162C289AF7F1003BBC13 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1623289AF7F1003BBC13 /* SearchTableViewController.swift */; };
+		651D1631289AF818003BBC13 /* FinanceDocsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D162D289AF818003BBC13 /* FinanceDocsModel.swift */; };
+		651D1632289AF818003BBC13 /* FinanceDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D162E289AF818003BBC13 /* FinanceDocs.swift */; };
+		651D1633289AF818003BBC13 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D162F289AF818003BBC13 /* SearchResults.swift */; };
+		651D1634289AF818003BBC13 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1630289AF818003BBC13 /* NewsModel.swift */; };
+		651D163D289AF840003BBC13 /* FinanceDocsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1636289AF840003BBC13 /* FinanceDocsWorker.swift */; };
+		651D163E289AF840003BBC13 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1637289AF840003BBC13 /* APIService.swift */; };
+		651D163F289AF840003BBC13 /* APIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1638289AF840003BBC13 /* APIWorker.swift */; };
+		651D1640289AF840003BBC13 /* DCALogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1639289AF840003BBC13 /* DCALogic.swift */; };
+		651D1641289AF840003BBC13 /* newsAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D163A289AF840003BBC13 /* newsAPIWorker.swift */; };
+		651D1642289AF840003BBC13 /* calcLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D163B289AF840003BBC13 /* calcLogic.swift */; };
+		651D1643289AF840003BBC13 /* NewsAPIWorker .swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D163C289AF840003BBC13 /* NewsAPIWorker .swift */; };
+		651D1645289AF872003BBC13 /* TimeByMonthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1644289AF872003BBC13 /* TimeByMonthModel.swift */; };
+		651D1647289AF87A003BBC13 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1646289AF87A003BBC13 /* Asset.swift */; };
+		651D164B289AF8BB003BBC13 /* FinanceDocumentsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1648289AF8BB003BBC13 /* FinanceDocumentsViewCell.swift */; };
+		651D164C289AF8BB003BBC13 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1649289AF8BB003BBC13 /* SearchTableViewCell.swift */; };
+		651D164D289AF8BB003BBC13 /* SearchPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D164A289AF8BB003BBC13 /* SearchPlaceholderView.swift */; };
+		651D1658289AF8CB003BBC13 /* IncomeStatementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651D164E289AF8CA003BBC13 /* IncomeStatementTableViewCell.xib */; };
+		651D1659289AF8CB003BBC13 /* LinksForDocsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D164F289AF8CA003BBC13 /* LinksForDocsCell.swift */; };
+		651D165A289AF8CB003BBC13 /* IncomeStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1650289AF8CB003BBC13 /* IncomeStatementTableViewCell.swift */; };
+		651D165B289AF8CB003BBC13 /* CashFlowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1651289AF8CB003BBC13 /* CashFlowTableViewCell.swift */; };
+		651D165C289AF8CB003BBC13 /* DocsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651D1652289AF8CB003BBC13 /* DocsTableViewCell.xib */; };
+		651D165D289AF8CB003BBC13 /* CashFlowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651D1653289AF8CB003BBC13 /* CashFlowTableViewCell.xib */; };
+		651D165E289AF8CB003BBC13 /* ComprehensiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651D1654289AF8CB003BBC13 /* ComprehensiveTableViewCell.xib */; };
+		651D165F289AF8CB003BBC13 /* LinksForDocsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651D1655289AF8CB003BBC13 /* LinksForDocsCell.xib */; };
+		651D1660289AF8CB003BBC13 /* ComprehensiveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1656289AF8CB003BBC13 /* ComprehensiveTableViewCell.swift */; };
+		651D1661289AF8CB003BBC13 /* DocsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D1657289AF8CB003BBC13 /* DocsTableViewCell.swift */; };
+		657B4E8C289AE43800499441 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B4E8B289AE43800499441 /* AppDelegate.swift */; };
+		657B4E8E289AE43800499441 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B4E8D289AE43800499441 /* SceneDelegate.swift */; };
+		657B4E96289AE43800499441 /* trackWSB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 657B4E94289AE43800499441 /* trackWSB.xcdatamodeld */; };
+		657B4E9B289AE43900499441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657B4E99289AE43900499441 /* LaunchScreen.storyboard */; };
+		657B4EA3289AE6CD00499441 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657B4EA2289AE6CD00499441 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		651D15FA289AF524003BBC13 /* ViewControllerLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLogger.swift; sourceTree = "<group>"; };
+		651D15FC289AF586003BBC13 /* TableViewControllerLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerLogger.swift; sourceTree = "<group>"; };
+		651D15FE289AF58C003BBC13 /* AppTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTimer.swift; sourceTree = "<group>"; };
+		651D1601289AF5B1003BBC13 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		651D1603289AF5C7003BBC13 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		651D1605289AF5D6003BBC13 /* TwitterClassifer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TwitterClassifer.mlmodel; sourceTree = "<group>"; };
+		651D1606289AF5D6003BBC13 /* twitter-sanders-apple3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "twitter-sanders-apple3.csv"; sourceTree = "<group>"; };
+		651D1607289AF5D6003BBC13 /* twitter-sanders-apple3.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "twitter-sanders-apple3.zip"; sourceTree = "<group>"; };
+		651D1608289AF5D6003BBC13 /* twitterClassifier.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = twitterClassifier.playground; sourceTree = "<group>"; };
+		651D1609289AF5D6003BBC13 /* createTwitterMLmodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createTwitterMLmodel.swift; sourceTree = "<group>"; };
+		651D160E289AF5EE003BBC13 /* MBProgAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgAnimate.swift; sourceTree = "<group>"; };
+		651D1610289AF695003BBC13 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		651D1612289AF6C7003BBC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		651D1614289AF6D2003BBC13 /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
+		651D1619289AF7DC003BBC13 /* CalculatorViewTableControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewTableControllerViewController.swift; sourceTree = "<group>"; };
+		651D161B289AF7F0003BBC13 /* TwitterPredictViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterPredictViewController.swift; sourceTree = "<group>"; };
+		651D161C289AF7F0003BBC13 /* DateSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSelectionTableViewController.swift; sourceTree = "<group>"; };
+		651D161D289AF7F0003BBC13 /* FinanceDocumentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceDocumentsViewController.swift; sourceTree = "<group>"; };
+		651D161E289AF7F0003BBC13 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		651D161F289AF7F0003BBC13 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		651D1620289AF7F0003BBC13 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		651D1621289AF7F1003BBC13 /* BasicCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCalculatorViewController.swift; sourceTree = "<group>"; };
+		651D1622289AF7F1003BBC13 /* PredictStockVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictStockVC.swift; sourceTree = "<group>"; };
+		651D1623289AF7F1003BBC13 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		651D162D289AF818003BBC13 /* FinanceDocsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceDocsModel.swift; sourceTree = "<group>"; };
+		651D162E289AF818003BBC13 /* FinanceDocs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceDocs.swift; sourceTree = "<group>"; };
+		651D162F289AF818003BBC13 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		651D1630289AF818003BBC13 /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		651D1636289AF840003BBC13 /* FinanceDocsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceDocsWorker.swift; sourceTree = "<group>"; };
+		651D1637289AF840003BBC13 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		651D1638289AF840003BBC13 /* APIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWorker.swift; sourceTree = "<group>"; };
+		651D1639289AF840003BBC13 /* DCALogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCALogic.swift; sourceTree = "<group>"; };
+		651D163A289AF840003BBC13 /* newsAPIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newsAPIWorker.swift; sourceTree = "<group>"; };
+		651D163B289AF840003BBC13 /* calcLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calcLogic.swift; sourceTree = "<group>"; };
+		651D163C289AF840003BBC13 /* NewsAPIWorker .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewsAPIWorker .swift"; sourceTree = "<group>"; };
+		651D1644289AF872003BBC13 /* TimeByMonthModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeByMonthModel.swift; sourceTree = "<group>"; };
+		651D1646289AF87A003BBC13 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		651D1648289AF8BB003BBC13 /* FinanceDocumentsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinanceDocumentsViewCell.swift; sourceTree = "<group>"; };
+		651D1649289AF8BB003BBC13 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		651D164A289AF8BB003BBC13 /* SearchPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPlaceholderView.swift; sourceTree = "<group>"; };
+		651D164E289AF8CA003BBC13 /* IncomeStatementTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncomeStatementTableViewCell.xib; sourceTree = "<group>"; };
+		651D164F289AF8CA003BBC13 /* LinksForDocsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksForDocsCell.swift; sourceTree = "<group>"; };
+		651D1650289AF8CB003BBC13 /* IncomeStatementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeStatementTableViewCell.swift; sourceTree = "<group>"; };
+		651D1651289AF8CB003BBC13 /* CashFlowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashFlowTableViewCell.swift; sourceTree = "<group>"; };
+		651D1652289AF8CB003BBC13 /* DocsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocsTableViewCell.xib; sourceTree = "<group>"; };
+		651D1653289AF8CB003BBC13 /* CashFlowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CashFlowTableViewCell.xib; sourceTree = "<group>"; };
+		651D1654289AF8CB003BBC13 /* ComprehensiveTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComprehensiveTableViewCell.xib; sourceTree = "<group>"; };
+		651D1655289AF8CB003BBC13 /* LinksForDocsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinksForDocsCell.xib; sourceTree = "<group>"; };
+		651D1656289AF8CB003BBC13 /* ComprehensiveTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprehensiveTableViewCell.swift; sourceTree = "<group>"; };
+		651D1657289AF8CB003BBC13 /* DocsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocsTableViewCell.swift; sourceTree = "<group>"; };
+		651D1664289AFBC7003BBC13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657B4E88289AE43800499441 /* trackWSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trackWSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		657B4E8B289AE43800499441 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		657B4E8D289AE43800499441 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		657B4E95289AE43800499441 /* trackWSB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = trackWSB.xcdatamodel; sourceTree = "<group>"; };
+		657B4E9A289AE43900499441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		657B4EA2289AE6CD00499441 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		657B4E85289AE43800499441 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651D1618289AF73E003BBC13 /* MBProgressHUD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651D1600289AF59E003BBC13 /* Classifiers  */ = {
+			isa = PBXGroup;
+			children = (
+				651D1609289AF5D6003BBC13 /* createTwitterMLmodel.swift */,
+				651D1606289AF5D6003BBC13 /* twitter-sanders-apple3.csv */,
+				651D1607289AF5D6003BBC13 /* twitter-sanders-apple3.zip */,
+				651D1605289AF5D6003BBC13 /* TwitterClassifer.mlmodel */,
+				651D1608289AF5D6003BBC13 /* twitterClassifier.playground */,
+			);
+			path = "Classifiers ";
+			sourceTree = "<group>";
+		};
+		651D1635289AF830003BBC13 /* ServiceWorkers */ = {
+			isa = PBXGroup;
+			children = (
+				651D1637289AF840003BBC13 /* APIService.swift */,
+				651D1638289AF840003BBC13 /* APIWorker.swift */,
+				651D163B289AF840003BBC13 /* calcLogic.swift */,
+				651D1639289AF840003BBC13 /* DCALogic.swift */,
+				651D1636289AF840003BBC13 /* FinanceDocsWorker.swift */,
+				651D163C289AF840003BBC13 /* NewsAPIWorker .swift */,
+				651D163A289AF840003BBC13 /* newsAPIWorker.swift */,
+			);
+			path = ServiceWorkers;
+			sourceTree = "<group>";
+		};
+		657B4E7F289AE43800499441 = {
+			isa = PBXGroup;
+			children = (
+				657B4E8A289AE43800499441 /* trackWSB */,
+				657B4E89289AE43800499441 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		657B4E89289AE43800499441 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				657B4E88289AE43800499441 /* trackWSB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		657B4E8A289AE43800499441 /* trackWSB */ = {
+			isa = PBXGroup;
+			children = (
+				651D1664289AFBC7003BBC13 /* Info.plist */,
+				651D1635289AF830003BBC13 /* ServiceWorkers */,
+				651D1600289AF59E003BBC13 /* Classifiers  */,
+				6587A6C2289AE878006E95BD /* Protocols */,
+				6587A6C1289AE848006E95BD /* Nibs */,
+				6587A6C0289AE83F006E95BD /* Loggers */,
+				6587A6BF289AE827006E95BD /* Assets */,
+				6587A6BE289AE819006E95BD /* Controller */,
+				6587A6BD289AE807006E95BD /* Views */,
+				6587A6BC289AE800006E95BD /* Models */,
+				657B4E8B289AE43800499441 /* AppDelegate.swift */,
+				657B4E8D289AE43800499441 /* SceneDelegate.swift */,
+			);
+			path = trackWSB;
+			sourceTree = "<group>";
+		};
+		6587A6BC289AE800006E95BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				651D162E289AF818003BBC13 /* FinanceDocs.swift */,
+				651D162D289AF818003BBC13 /* FinanceDocsModel.swift */,
+				651D1630289AF818003BBC13 /* NewsModel.swift */,
+				651D1644289AF872003BBC13 /* TimeByMonthModel.swift */,
+				651D162F289AF818003BBC13 /* SearchResults.swift */,
+				651D1646289AF87A003BBC13 /* Asset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6587A6BD289AE807006E95BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				651D1648289AF8BB003BBC13 /* FinanceDocumentsViewCell.swift */,
+				651D164A289AF8BB003BBC13 /* SearchPlaceholderView.swift */,
+				651D1649289AF8BB003BBC13 /* SearchTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6587A6BE289AE819006E95BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				651D1621289AF7F1003BBC13 /* BasicCalculatorViewController.swift */,
+				651D161C289AF7F0003BBC13 /* DateSelectionTableViewController.swift */,
+				651D161D289AF7F0003BBC13 /* FinanceDocumentsViewController.swift */,
+				651D1620289AF7F0003BBC13 /* NewsTableViewController.swift */,
+				651D161E289AF7F0003BBC13 /* PageViewController.swift */,
+				651D1622289AF7F1003BBC13 /* PredictStockVC.swift */,
+				651D1623289AF7F1003BBC13 /* SearchTableViewController.swift */,
+				651D161B289AF7F0003BBC13 /* TwitterPredictViewController.swift */,
+				651D161F289AF7F0003BBC13 /* WebViewController.swift */,
+				651D1619289AF7DC003BBC13 /* CalculatorViewTableControllerViewController.swift */,
+				651D1610289AF695003BBC13 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6587A6BF289AE827006E95BD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				651D1614289AF6D2003BBC13 /* Icons */,
+				657B4EA2289AE6CD00499441 /* Main.storyboard */,
+				651D1612289AF6C7003BBC13 /* Assets.xcassets */,
+				657B4E99289AE43900499441 /* LaunchScreen.storyboard */,
+				657B4E94289AE43800499441 /* trackWSB.xcdatamodeld */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6587A6C0289AE83F006E95BD /* Loggers */ = {
+			isa = PBXGroup;
+			children = (
+				651D15FA289AF524003BBC13 /* ViewControllerLogger.swift */,
+				651D15FC289AF586003BBC13 /* TableViewControllerLogger.swift */,
+				651D15FE289AF58C003BBC13 /* AppTimer.swift */,
+			);
+			path = Loggers;
+			sourceTree = "<group>";
+		};
+		6587A6C1289AE848006E95BD /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				651D1651289AF8CB003BBC13 /* CashFlowTableViewCell.swift */,
+				651D1653289AF8CB003BBC13 /* CashFlowTableViewCell.xib */,
+				651D1656289AF8CB003BBC13 /* ComprehensiveTableViewCell.swift */,
+				651D1654289AF8CB003BBC13 /* ComprehensiveTableViewCell.xib */,
+				651D1657289AF8CB003BBC13 /* DocsTableViewCell.swift */,
+				651D1652289AF8CB003BBC13 /* DocsTableViewCell.xib */,
+				651D1650289AF8CB003BBC13 /* IncomeStatementTableViewCell.swift */,
+				651D164E289AF8CA003BBC13 /* IncomeStatementTableViewCell.xib */,
+				651D164F289AF8CA003BBC13 /* LinksForDocsCell.swift */,
+				651D1655289AF8CB003BBC13 /* LinksForDocsCell.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		6587A6C2289AE878006E95BD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				651D1601289AF5B1003BBC13 /* Extensions.swift */,
+				651D1603289AF5C7003BBC13 /* Constants.swift */,
+				651D160E289AF5EE003BBC13 /* MBProgAnimate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		657B4E87289AE43800499441 /* trackWSB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 657B4E9F289AE43900499441 /* Build configuration list for PBXNativeTarget "trackWSB" */;
+			buildPhases = (
+				657B4E84289AE43800499441 /* Sources */,
+				657B4E85289AE43800499441 /* Frameworks */,
+				657B4E86289AE43800499441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trackWSB;
+			packageProductDependencies = (
+				651D1617289AF73E003BBC13 /* MBProgressHUD */,
+			);
+			productName = trackWSB;
+			productReference = 657B4E88289AE43800499441 /* trackWSB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		657B4E80289AE43800499441 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					657B4E87289AE43800499441 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 657B4E83289AE43800499441 /* Build configuration list for PBXProject "trackWSB" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 657B4E7F289AE43800499441;
+			packageReferences = (
+				651D1616289AF73E003BBC13 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+			);
+			productRefGroup = 657B4E89289AE43800499441 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				657B4E87289AE43800499441 /* trackWSB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		657B4E86289AE43800499441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651D165E289AF8CB003BBC13 /* ComprehensiveTableViewCell.xib in Resources */,
+				657B4E9B289AE43900499441 /* LaunchScreen.storyboard in Resources */,
+				651D160C289AF5D6003BBC13 /* twitter-sanders-apple3.zip in Resources */,
+				651D165C289AF8CB003BBC13 /* DocsTableViewCell.xib in Resources */,
+				651D160B289AF5D6003BBC13 /* twitter-sanders-apple3.csv in Resources */,
+				651D1658289AF8CB003BBC13 /* IncomeStatementTableViewCell.xib in Resources */,
+				651D165F289AF8CB003BBC13 /* LinksForDocsCell.xib in Resources */,
+				651D1615289AF6D2003BBC13 /* Icons in Resources */,
+				657B4EA3289AE6CD00499441 /* Main.storyboard in Resources */,
+				651D165D289AF8CB003BBC13 /* CashFlowTableViewCell.xib in Resources */,
+				651D1613289AF6C7003BBC13 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		657B4E84289AE43800499441 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651D1624289AF7F1003BBC13 /* TwitterPredictViewController.swift in Sources */,
+				651D162A289AF7F1003BBC13 /* BasicCalculatorViewController.swift in Sources */,
+				651D1633289AF818003BBC13 /* SearchResults.swift in Sources */,
+				651D1628289AF7F1003BBC13 /* WebViewController.swift in Sources */,
+				651D15FB289AF524003BBC13 /* ViewControllerLogger.swift in Sources */,
+				651D1643289AF840003BBC13 /* NewsAPIWorker .swift in Sources */,
+				651D164B289AF8BB003BBC13 /* FinanceDocumentsViewCell.swift in Sources */,
+				651D1625289AF7F1003BBC13 /* DateSelectionTableViewController.swift in Sources */,
+				651D163D289AF840003BBC13 /* FinanceDocsWorker.swift in Sources */,
+				651D160A289AF5D6003BBC13 /* TwitterClassifer.mlmodel in Sources */,
+				651D1661289AF8CB003BBC13 /* DocsTableViewCell.swift in Sources */,
+				651D1626289AF7F1003BBC13 /* FinanceDocumentsViewController.swift in Sources */,
+				651D1631289AF818003BBC13 /* FinanceDocsModel.swift in Sources */,
+				651D15FF289AF58C003BBC13 /* AppTimer.swift in Sources */,
+				651D1642289AF840003BBC13 /* calcLogic.swift in Sources */,
+				651D1602289AF5B1003BBC13 /* Extensions.swift in Sources */,
+				651D162B289AF7F1003BBC13 /* PredictStockVC.swift in Sources */,
+				657B4E8C289AE43800499441 /* AppDelegate.swift in Sources */,
+				651D1627289AF7F1003BBC13 /* PageViewController.swift in Sources */,
+				651D1641289AF840003BBC13 /* newsAPIWorker.swift in Sources */,
+				651D1629289AF7F1003BBC13 /* NewsTableViewController.swift in Sources */,
+				651D163F289AF840003BBC13 /* APIWorker.swift in Sources */,
+				651D1640289AF840003BBC13 /* DCALogic.swift in Sources */,
+				651D15FD289AF586003BBC13 /* TableViewControllerLogger.swift in Sources */,
+				651D1647289AF87A003BBC13 /* Asset.swift in Sources */,
+				651D165A289AF8CB003BBC13 /* IncomeStatementTableViewCell.swift in Sources */,
+				651D161A289AF7DC003BBC13 /* CalculatorViewTableControllerViewController.swift in Sources */,
+				657B4E96289AE43800499441 /* trackWSB.xcdatamodeld in Sources */,
+				651D165B289AF8CB003BBC13 /* CashFlowTableViewCell.swift in Sources */,
+				651D1659289AF8CB003BBC13 /* LinksForDocsCell.swift in Sources */,
+				651D1632289AF818003BBC13 /* FinanceDocs.swift in Sources */,
+				651D160F289AF5EE003BBC13 /* MBProgAnimate.swift in Sources */,
+				651D1645289AF872003BBC13 /* TimeByMonthModel.swift in Sources */,
+				651D160D289AF5D6003BBC13 /* createTwitterMLmodel.swift in Sources */,
+				651D163E289AF840003BBC13 /* APIService.swift in Sources */,
+				651D1660289AF8CB003BBC13 /* ComprehensiveTableViewCell.swift in Sources */,
+				657B4E8E289AE43800499441 /* SceneDelegate.swift in Sources */,
+				651D164D289AF8BB003BBC13 /* SearchPlaceholderView.swift in Sources */,
+				651D1634289AF818003BBC13 /* NewsModel.swift in Sources */,
+				651D162C289AF7F1003BBC13 /* SearchTableViewController.swift in Sources */,
+				651D1604289AF5C7003BBC13 /* Constants.swift in Sources */,
+				651D164C289AF8BB003BBC13 /* SearchTableViewCell.swift in Sources */,
+				651D1611289AF695003BBC13 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		657B4E99289AE43900499441 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				657B4E9A289AE43900499441 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		657B4E9D289AE43900499441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		657B4E9E289AE43900499441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		657B4EA0289AE43900499441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PCTB5RL5K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trackWSB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = trackWSB;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.nobdylikesme.trackWSB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		657B4EA1289AE43900499441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PCTB5RL5K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trackWSB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = trackWSB;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.nobdylikesme.trackWSB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		657B4E83289AE43800499441 /* Build configuration list for PBXProject "trackWSB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657B4E9D289AE43900499441 /* Debug */,
+				657B4E9E289AE43900499441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		657B4E9F289AE43900499441 /* Build configuration list for PBXNativeTarget "trackWSB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				657B4EA0289AE43900499441 /* Debug */,
+				657B4EA1289AE43900499441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		651D1616289AF73E003BBC13 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		651D1617289AF73E003BBC13 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 651D1616289AF73E003BBC13 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		657B4E94289AE43800499441 /* trackWSB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				657B4E95289AE43800499441 /* trackWSB.xcdatamodel */,
+			);
+			currentVersion = 657B4E95289AE43800499441 /* trackWSB.xcdatamodel */;
+			path = trackWSB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 657B4E80289AE43800499441 /* Project object */;
+}
