@@ -20,7 +20,7 @@ class validateSymbol {
     private var symbolModel: SymbolModel?
     private static var symbol : String? // allow outside classes to reassign. May need to make private(set)
     static let state = validateSymbol()
-
+    
     private init() {}
     deinit {
         print("[!] The Symbol has been removed from memory.. \(symbolModel?.symbol) ")
@@ -157,11 +157,14 @@ class HomeViewController: ViewControllerLogger, UITextFieldDelegate {
     
     
     private func reloadData() {
-        DispatchQueue.global(qos: .userInitiated).async {
+        DispatchQueue.main.async {
+            [weak self] in
             print("[!] User Requested to reload view")
             HomeViewController.homeVC.viewDidLoad()
         }
+        
     }
+    
     
     
     // TODO: Add to storyboard
@@ -232,7 +235,6 @@ class HomeViewController: ViewControllerLogger, UITextFieldDelegate {
         let notifiedSymbol = Notification.Name.symbol
         let alertController = UIAlertController(title: "enter new symbol", message: "\(notifiedSymbol) not valid", preferredStyle: .alert)
         
-        dispatchGroup.enter()
         let confirmEditBtn = UIAlertAction(title: "add", style: .default) { [weak self] (edit) in
             print("[!] Editing UITextField ")
             if let alertField = alertController.textFields?.first, let text = alertField.text {
@@ -450,20 +452,20 @@ extension DispatchQueue {
 
 
 /*
-
-// TO PASS DATA TO NOTIFICATION CENTER
-NotificationCenter.default
-            .post(name: NSNotification.Name("com.user.login.success"),
-             object: nil)
+ 
+ // TO PASS DATA TO NOTIFICATION CENTER
+ NotificationCenter.default
+ .post(name: NSNotification.Name("com.user.login.success"),
+ object: nil)
  
  let loginResponse = ["userInfo": ["userID": 6, "userName": "John"]]
  NotificationCenter.default
-             .post(name: NSNotification.Name("com.user.login.success"),
-              object: nil,
-              userInfo: loginResponse)
+ .post(name: NSNotification.Name("com.user.login.success"),
+ object: nil,
+ userInfo: loginResponse)
  
  
  
-*/
+ */
 
 

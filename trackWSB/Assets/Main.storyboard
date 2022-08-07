@@ -405,7 +405,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHu-zZ-Xfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="yJM-dL-Jzs" userLabel="Exit" sceneMemberID="exit"/>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ryC-Ll-fdz">
-                    <rect key="frame" x="0.0" y="0.0" width="101.5" height="34.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="101.5" height="34.666666666666664"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray" title="News"/>
@@ -504,7 +504,7 @@
         <!--HomeViewController-->
         <scene sceneID="bGM-mM-QJA">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="JQD-DF-X4a" customClass="HomeViewController" customModule="Finance_App01" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="JQD-DF-X4a" customClass="HomeViewController" customModule="trackWSB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sn8-N7-Kxk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -519,9 +519,6 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textField:" destination="JQD-DF-X4a" eventType="editingDidEnd" id="n6t-3G-PNe"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="REq-Rv-QbC">
                                 <rect key="frame" x="101" y="459" width="212" height="44"/>
@@ -529,58 +526,19 @@
                                 <menu key="menu" title="options" identifier="options " id="WD8-c1-g7e" userLabel="options">
                                     <menuOptions key="menuOptions" displayInline="YES" singleSelection="YES"/>
                                     <children>
-                                        <command title="DetailedSearch" id="uLO-LV-agu" userLabel="search">
-                                            <connections>
-                                                <action selector="homeScroll2Search:" destination="JQD-DF-X4a" id="4Fm-1a-S8I"/>
-                                            </connections>
-                                        </command>
-                                        <command title="calculate" id="mNS-OT-Oeq">
-                                            <connections>
-                                                <action selector="homeScroll2BasicCalcWith_sender:" destination="JQD-DF-X4a" id="Okj-xA-L4E"/>
-                                            </connections>
-                                        </command>
-                                        <command title="fin docs" id="5e5-gC-q9h" userLabel="fin docs">
-                                            <connections>
-                                                <action selector="homeScroll2FinDocs:" destination="JQD-DF-X4a" id="ykh-Ym-tkV"/>
-                                            </connections>
-                                        </command>
-                                        <command title="predictive(analsys)" menuElementState="on" id="zdo-mQ-vWS">
-                                            <connections>
-                                                <action selector="home2prediction:" destination="JQD-DF-X4a" id="hnt-FG-lGp"/>
-                                            </connections>
-                                        </command>
-                                        <command title="twitter(analsys)" id="fPW-T5-w03">
-                                            <connections>
-                                                <action selector="homeScroll2Twitter:" destination="JQD-DF-X4a" id="HeU-VO-nfI"/>
-                                            </connections>
-                                        </command>
-                                        <command title=" news(current)" id="tzH-pk-Tnx" userLabel="news(webViews)">
-                                            <connections>
-                                                <action selector="homeScroll2WebViews:" destination="JQD-DF-X4a" id="vzB-Pj-6Vb"/>
-                                            </connections>
-                                        </command>
-                                        <command title="news(historical)" menuElementState="on" id="CQt-dE-9Qe" userLabel="news(historical)">
-                                            <connections>
-                                                <action selector="homeScroll2Search:" destination="JQD-DF-X4a" id="6hZ-ZK-KkE"/>
-                                            </connections>
-                                        </command>
+                                        <command title="DetailedSearch" id="uLO-LV-agu" userLabel="search"/>
+                                        <command title="calculate" id="mNS-OT-Oeq"/>
+                                        <command title="fin docs" id="5e5-gC-q9h" userLabel="fin docs"/>
+                                        <command title="predictive(analsys)" menuElementState="on" id="zdo-mQ-vWS"/>
+                                        <command title="twitter(analsys)" id="fPW-T5-w03"/>
+                                        <command title=" news(current)" id="tzH-pk-Tnx" userLabel="news(webViews)"/>
+                                        <command title="news(historical)" menuElementState="on" id="CQt-dE-9Qe" userLabel="news(historical)"/>
                                     </children>
                                 </menu>
                                 <state key="normal" title="Choices">
                                     <color key="titleColor" systemColor="systemYellowColor"/>
                                     <color key="titleShadowColor" systemColor="systemYellowColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="homeScroll2BasicCalcWith_sender:" destination="JQD-DF-X4a" eventType="touchUpInside" id="iSx-YC-STz"/>
-                                    <action selector="homeScroll2FinDocs:" destination="JQD-DF-X4a" eventType="touchUpInside" id="vht-DM-iKx"/>
-                                    <action selector="homeScroll2Search:" destination="JQD-DF-X4a" eventType="touchUpInside" id="iHO-pC-pWm"/>
-                                    <action selector="homeScroll2Twitter:" destination="JQD-DF-X4a" eventType="touchUpInside" id="x9x-cU-2Un"/>
-                                    <action selector="homeScroll2WebViews:" destination="JQD-DF-X4a" eventType="touchUpInside" id="JDU-2K-Fny"/>
-                                    <action selector="scrollButton:" destination="JQD-DF-X4a" eventType="touchDown" id="Ee3-cc-wVR"/>
-                                    <segue destination="kKa-IP-6vH" kind="popoverPresentation" identifier="homeScroll2WebViews" popoverAnchorView="Sn8-N7-Kxk" id="zFz-qC-XaT">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wsb" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-Bh-1im">
                                 <rect key="frame" x="87" y="88" width="240" height="128"/>
@@ -600,6 +558,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yWI-Oi-Nw4"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="zGV-KS-LyC" firstAttribute="centerX" secondItem="REq-Rv-QbC" secondAttribute="centerX" id="Fjs-eB-kjC"/>
                             <constraint firstItem="yWI-Oi-Nw4" firstAttribute="trailing" secondItem="zGV-KS-LyC" secondAttribute="trailing" constant="20" id="I4b-33-i6b"/>
@@ -622,9 +583,6 @@
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
                         <segue destination="eGh-cv-O0e" kind="show" identifier="homeScroll2FinDocs" id="LgD-HI-nhL"/>
-                        <segue destination="yiw-ef-3eK" kind="popoverPresentation" identifier="homeScroll2Search" popoverAnchorView="Sn8-N7-Kxk" id="NcD-hy-6oF">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AnA-d4-H7y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -719,11 +677,11 @@
             <objects>
                 <viewController storyboardIdentifier="WebViewController" title="WebViewController" id="kKa-IP-6vH" customClass="WebViewController" customModule="trackWSB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="glX-Kd-fgE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxW-0v-dxI">
-                                <rect key="frame" x="0.0" y="44" width="414" height="832"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -743,7 +701,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$symbol " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TaM-2U-X3j">
-                                <rect key="frame" x="20" y="725" width="374" height="34"/>
+                                <rect key="frame" x="20" y="745" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="jBz-Of-uhC"/>
                                 </constraints>
@@ -1248,7 +1206,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$Symbol " textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mp5-fI-Ekj">
-                                    <rect key="frame" x="-44.5" y="-18" width="89" height="36"/>
+                                    <rect key="frame" x="-44.666666666666664" y="-18" width="89.333333333333329" height="36"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardAppearance="alert"/>
                                 </textField>
@@ -1355,7 +1313,7 @@
         <segue reference="E8L-ay-0aW"/>
         <segue reference="uf3-VW-RQU"/>
         <segue reference="Gik-W3-SHG"/>
-        <segue reference="Ygw-8p-CbJ"/>
+        <segue reference="JFd-I7-bIw"/>
         <segue reference="Iaa-ax-pCh"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemYellowColor"/>
